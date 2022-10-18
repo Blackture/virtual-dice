@@ -1,0 +1,5 @@
+C:\Users\Administrator\source\repos\GameToolbox\Elements\bin\Debug\Elements.dll
+C:\Users\Administrator\source\repos\GameToolbox\Elements\bin\Debug\Elements.pdb
+C:\Users\Administrator\source\repos\GameToolbox\Elements\obj\Debug\Elements.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\GameToolbox\Elements\obj\Debug\Elements.dll
+C:\Users\Administrator\source\repos\GameToolbox\Elements\obj\Debug\Elements.pdb

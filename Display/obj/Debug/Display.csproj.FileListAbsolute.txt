@@ -1,0 +1,12 @@
+C:\Users\Administrator\source\repos\GameToolbox\Display\bin\Debug\Display.exe.config
+C:\Users\Administrator\source\repos\GameToolbox\Display\bin\Debug\Display.exe
+C:\Users\Administrator\source\repos\GameToolbox\Display\bin\Debug\Display.pdb
+C:\Users\Administrator\source\repos\GameToolbox\Display\bin\Debug\Elements.dll
+C:\Users\Administrator\source\repos\GameToolbox\Display\bin\Debug\Elements.pdb
+C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Debug\Display.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Debug\Display.Form1.resources
+C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Debug\GameToolbox.Display.Properties.Resources.resources
+C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Debug\Display.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Debug\Display.csproj.CopyComplete
+C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Debug\Display.exe
+C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Debug\Display.pdb

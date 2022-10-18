@@ -1,0 +1,4 @@
+C:\Users\Administrator\source\repos\GameToolbox\Elements\bin\Release\Elements.dll
+C:\Users\Administrator\source\repos\GameToolbox\Elements\bin\Release\Elements.pdb
+C:\Users\Administrator\source\repos\GameToolbox\Elements\obj\Release\Elements.dll
+C:\Users\Administrator\source\repos\GameToolbox\Elements\obj\Release\Elements.pdb
