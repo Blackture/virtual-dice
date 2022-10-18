@@ -1,1 +1,3 @@
-remote-theme: Midnight;
+#Build Settings
+markdown: kramdown
+remote-theme: Midnight
