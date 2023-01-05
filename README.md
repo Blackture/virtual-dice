@@ -18,3 +18,5 @@ This tool allows you to
   - all the adjustable settings
 
 The tool's window is held as small as possible, so it is no obstacle on the screen.
+
+Internal docs [here](https://blackture.github.io/Docs/).
