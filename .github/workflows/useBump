@@ -1,2 +1,0 @@
-- name: API documentation on Bump
-  uses: bump-sh/github-action@v1.1.5
