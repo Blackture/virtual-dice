@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GameToolbox.Elements
 {
+    /// <summary>
+    /// This is a Die class that represents a die with a certain number of sides.
+    /// </summary>
     public class Die
     {       
         private int sides;
@@ -14,10 +17,25 @@ namespace GameToolbox.Elements
         private Random random;
         private bool izi;
 
+        /// <summary>
+        /// a uint that gets or sets the number of sides on the die. When it is set, it calls the Setup() method to initialize the chances list.
+        /// </summary>
         public uint Sides { get => (uint)sides; set { sides = (int)value; Setup(); } }
+        /// <summary>
+        /// a bool that gets or sets a value indicating whether the die is zero-indexed or not.
+        /// </summary>
         public bool IsZeroIndexed { get => izi; set => izi = value; }
+        /// <summary>
+        /// a readonly float that represents the chance of rolling any particular side of the die, calculated as 1.0f / sides * 100.
+        /// </summary>
         public float ChancePerSide { get => 1.0f / sides * 100; }
 
+        /// <summary>
+        /// a constructor that initializes a new instance of the Die class with the specified number of sides and optional seed and zero-indexed flag.
+        /// </summary>
+        /// <param name="sides"></param>
+        /// <param name="seed"></param>
+        /// <param name="isZeroIndexed"></param>
         public Die(uint sides, int seed = 0, bool isZeroIndexed = false) 
         {
             this.seed = seed;
@@ -25,6 +43,9 @@ namespace GameToolbox.Elements
             Sides = sides;
         }
 
+        /// <summary>
+        /// The Setup() method initializes the random field with the specified seed, and sets up the chances list. It calculates the chance per side as 1.0f / sides and then fills the chances list with a series of floats that increase by the chance per side each time, starting from 0.
+        /// </summary>
         private void Setup()
         {
             random = new Random(seed);
@@ -39,7 +60,7 @@ namespace GameToolbox.Elements
         }
 
         /// <summary>
-        /// Rolls the die once.
+        /// rolls the die once and outputs the result in the roll parameter. It returns a bool indicating whether the roll was valid.
         /// </summary>
         /// <param name="roll">Outputs the rolled value.</param>
         /// <returns>Returns a boolean indentifying if the roll was valid.</returns>
@@ -57,6 +78,11 @@ namespace GameToolbox.Elements
             }
             return roll != -1;
         }
+
+        /// <summary>
+        /// rolls the die once and returns the result as an int.
+        /// </summary>
+        /// <returns></returns>
         public int Roll()
         {
             float value = (float)random.NextDouble();
