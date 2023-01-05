@@ -22,7 +22,7 @@ jobs:
         with:
           doc: virtual-dice
           token: ${{secrets.BUMP_TOKEN}}
-          file: api-contract.yml
+          file: virtual-dice
 
   api-diff:
     if: ${{ github.event_name == 'pull_request' }}
@@ -36,7 +36,7 @@ jobs:
         with:
           doc: virtual-dice
           token: ${{secrets.BUMP_TOKEN}}
-          file: api-contract.yml
+          file: virtual-dice
           command: diff
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
