@@ -16,6 +16,8 @@ namespace GameToolbox.Elements
         private protected int seed;
         private Random random;
         private bool izi;
+        private bool advantage;
+        private bool disadvantage;
 
         /// <summary>
         /// a uint that gets or sets the number of sides on the die. When it is set, it calls the Setup() method to initialize the chances list.
@@ -29,6 +31,36 @@ namespace GameToolbox.Elements
         /// a readonly float that represents the chance of rolling any particular side of the die, calculated as 1.0f / sides * 100.
         /// </summary>
         public float ChancePerSide { get => 1.0f / sides * 100; }
+        /// <summary>
+        /// If advantage is true, all rolls by this object will have advantage until it' set to false again.
+        /// </summary>
+        public bool Advantage
+        { 
+            get => advantage; 
+            set 
+            {
+                if (disadvantage && value)
+                {
+                    disadvantage = false;
+                }
+                advantage = value;
+            }
+        }
+        /// <summary>
+        /// If disadvantage is true, all rolls by this object will have disadvantage until it' set to false again
+        /// </summary>
+        public bool Disadvantage
+        {
+            get => disadvantage;
+            set
+            {
+                if (advantage && value)
+                {
+                    advantage = false;
+                }
+                disadvantage = value;
+            }
+        }
 
         /// <summary>
         /// a constructor that initializes a new instance of the Die class with the specified number of sides and optional seed and zero-indexed flag.
@@ -139,9 +171,9 @@ namespace GameToolbox.Elements
         #region Operators
         public static int operator+(Die d1, Die d2)
         {
-            if (d1.Roll(out int r1))
+            if (d1.Roll(out int r1, d1.advantage, d1.disadvantage))
             {
-                if (d2.Roll(out int r2))
+                if (d2.Roll(out int r2, d2.advantage, d2.disadvantage))
                 {
                     return r1 + r2;
                 }
@@ -152,9 +184,9 @@ namespace GameToolbox.Elements
 
         public static int operator*(Die d1, Die d2)
         {
-            if (d1.Roll(out int r1))
+            if (d1.Roll(out int r1, d1.advantage, d1.disadvantage))
             {
-                if (d2.Roll(out int r2))
+                if (d2.Roll(out int r2, d2.advantage, d2.disadvantage))
                 {
                     return r1 * r2;
                 }
@@ -165,9 +197,9 @@ namespace GameToolbox.Elements
 
         public static int operator/(Die d1, Die d2)
         {
-            if (d1.Roll(out int r1))
+            if (d1.Roll(out int r1, d1.advantage, d1.disadvantage))
             {
-                if (d2.Roll(out int r2))
+                if (d2.Roll(out int r2, d2.advantage, d2.disadvantage))
                 {
                     return r1 / r2;
                 }
@@ -178,9 +210,9 @@ namespace GameToolbox.Elements
 
         public static int operator-(Die d1, Die d2)
         {
-            if (d1.Roll(out int r1))
+            if (d1.Roll(out int r1, d1.advantage, d1.disadvantage))
             {
-                if (d2.Roll(out int r2))
+                if (d2.Roll(out int r2, d2.advantage, d2.disadvantage))
                 {
                     return r1 - r2;
                 }
@@ -191,9 +223,9 @@ namespace GameToolbox.Elements
 
         public static int operator%(Die d1, Die d2)
         {
-            if (d1.Roll(out int r1))
+            if (d1.Roll(out int r1, d1.advantage, d1.disadvantage))
             {
-                if (d2.Roll(out int r2))
+                if (d2.Roll(out int r2, d2.advantage, d2.disadvantage))
                 {
                     return r1 % r2;
                 }
@@ -204,7 +236,7 @@ namespace GameToolbox.Elements
 
         public static implicit operator int(Die d1)
         {
-            if (d1.Roll(out int r1))
+            if (d1.Roll(out int r1, d1.advantage, d1.disadvantage))
             {
                 return r1;
             }
