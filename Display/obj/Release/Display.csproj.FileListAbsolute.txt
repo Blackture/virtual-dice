@@ -10,3 +10,17 @@ C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Release\Display.cspr
 C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Release\Display.csproj.CopyComplete
 C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Release\Display.exe
 C:\Users\Administrator\source\repos\GameToolbox\Display\obj\Release\Display.pdb
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\bin\Release\Display.exe.config
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\bin\Release\Display.exe
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\bin\Release\Display.pdb
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\bin\Release\Elements.dll
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\bin\Release\Elements.pdb
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\obj\Release\Display.csproj.AssemblyReference.cache
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\obj\Release\Display.csproj.SuggestedBindingRedirects.cache
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\obj\Release\Display.Form1.resources
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\obj\Release\GameToolbox.Display.Properties.Resources.resources
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\obj\Release\Display.csproj.GenerateResource.cache
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\obj\Release\Display.csproj.CoreCompileInputs.cache
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\obj\Release\Display.csproj.CopyComplete
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\obj\Release\Display.exe
+D:\Users\patri\Documents\GitHub\virtual-dice\Display\obj\Release\Display.pdb

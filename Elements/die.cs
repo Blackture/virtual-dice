@@ -59,8 +59,28 @@ namespace GameToolbox.Elements
             }
         }
 
+        public bool Roll(out int roll, bool advantage = false, bool disadvantage = false)
+        {
+            bool success01 = Roll(out int roll1);
+            bool result = success01;
+
+            if (advantage || disadvantage)
+            {
+                bool success02 = Roll(out int roll2);
+                if (advantage)
+                    roll = Math.Max(roll1, roll2);
+                else
+                    roll = Math.Min(roll1, roll2);
+
+                result = success01 && success02;
+            }
+            else roll = roll1;
+
+            return result;
+        }
+
         /// <summary>
-        /// rolls the die once and outputs the result in the roll parameter. It returns a bool indicating whether the roll was valid.
+        /// Rolls the die once.
         /// </summary>
         /// <param name="roll">Outputs the rolled value.</param>
         /// <returns>Returns a boolean indentifying if the roll was valid.</returns>
@@ -68,7 +88,7 @@ namespace GameToolbox.Elements
         {
             float value = (float)random.NextDouble();
             roll = -1;
-            for(int i = 0; i < sides; i++)
+            for (int i = 0; i < sides; i++)
             {
                 if (i == sides - 1 && value >= chances[i]) roll = IsZeroIndexed ? i : i + 1;
                 else if (value >= chances[i] && value < chances[i + 1])
@@ -79,6 +99,24 @@ namespace GameToolbox.Elements
             return roll != -1;
         }
 
+        public int Roll(bool advantage = false, bool disadvantage = false)
+        {
+            int roll;
+            int roll1 = Roll();
+
+            if (advantage || disadvantage)
+            {
+                int roll2 = Roll();
+                if (advantage)
+                    roll = Math.Max(roll1, roll2);
+                else
+                    roll = Math.Min(roll1, roll2);
+
+            }
+            else roll = roll1;
+
+            return roll;
+        }
         /// <summary>
         /// rolls the die once and returns the result as an int.
         /// </summary>

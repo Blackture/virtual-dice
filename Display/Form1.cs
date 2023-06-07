@@ -54,7 +54,7 @@ namespace Display
             
             for (int i = 0; i < nudCount.Value; i++)
             {
-                if (die.Roll(out int res))
+                if (die.Roll(out int res, cbAdvantage.Checked, cbDisadvantage.Checked))
                 {
                     if (i == 0) roll += res * rFac;
                     else
@@ -85,6 +85,16 @@ namespace Display
             float.TryParse(tbAdditiveModifier.Text, out float aM);
             float res = scaRes + aM;
             tbModifiedResult.Text = $"{res:0.000}";
+        }
+
+        private void cbAdvantage_Clicked(object sender, EventArgs e)
+        {
+            if (cbDisadvantage.Checked) cbDisadvantage.Checked = false;
+        }
+
+        private void cbDisadvantage_Clicked(object sender, EventArgs e)
+        {
+            if (cbAdvantage.Checked) cbAdvantage.Checked = false;
         }
     }
 }
