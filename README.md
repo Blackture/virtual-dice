@@ -1,7 +1,8 @@
 # Virtual Dice
 This is the first version for windows 10 64-bit of my "virtual-dice"-tool.
-This project is an open-source endeavor released under the permissive MIT License.
-This tool allows you to
+**This project is an open-source endeavor released under the permissive MIT License.**
+
+**This tool allows you to**
 - adjust
   - the dice start - you can decide if the dice starts with a 0 or 1 on the first side
   - the seed of the dice
