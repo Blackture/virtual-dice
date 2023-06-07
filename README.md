@@ -21,4 +21,4 @@ This is the first version for windows 10 64-bit of my "virtual-dice"-tool.
 
 The tool's window is held as small as possible, so it is no obstacle on the screen.
 
-Internal docs are found [here](https://app.gitbook.com/o/86SpSOYnxCp17lFHI5mV/s/K6jX2Oe6NqKb5zxKCI2l/) or [here](https://blackture.github.io/Docs/virtualDiceAPI/GameToolbox.Elements.Die.html).
+Internal docs are found on [GitBook](https://app.gitbook.com/o/86SpSOYnxCp17lFHI5mV/s/K6jX2Oe6NqKb5zxKCI2l/) or on another [Git Repository](https://blackture.github.io/Docs/virtualDiceAPI/GameToolbox.Elements.Die.html).
