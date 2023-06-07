@@ -1,6 +1,8 @@
 # Virtual Dice
 This is the first version for windows 10 64-bit of my "virtual-dice"-tool.
-This tool allows you to
+***This project is an open-source endeavor released under the permissive MIT License.***
+
+**This tool allows you to:**
 - adjust
   - the dice start - you can decide if the dice starts with a 0 or 1 on the first side
   - the seed of the dice
@@ -19,4 +21,4 @@ This tool allows you to
 
 The tool's window is held as small as possible, so it is no obstacle on the screen.
 
-Internal docs [here](https://blackture.github.io/Docs/).
+Internal docs are found on [GitBook](https://app.gitbook.com/o/86SpSOYnxCp17lFHI5mV/s/K6jX2Oe6NqKb5zxKCI2l/) or on another [Git Repository](https://blackture.github.io/Docs/virtualDiceAPI/GameToolbox.Elements.Die.html).
